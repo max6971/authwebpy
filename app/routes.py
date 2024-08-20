@@ -5,15 +5,17 @@ from app import app, db, bcrypt
 from app.forms import RegistrationForm, LoginForm
 
 
+
+
 @app.route('/')
 
 @app.route('/home')
 
 def home():
-    render_template('home.html')
+    return render_template('home.html')
 
 
-@app.route('/register.html', methods = ['GET', 'POST'])
+@app.route('/register.html', methods=['GET', 'POST'])
 
 def register():
     if current_user.is_authenticated:
