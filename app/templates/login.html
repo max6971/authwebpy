@@ -9,11 +9,11 @@
     <form method="POST" action="{{ url_for('login') }}">
         {{ form.hidden_tag() }}
         <div>
-            {{ form.email.label }}<br>
+            {{ form.email.label }}
             {{ form.email(size=64) }}
         </div>
         <div>
-            {{ form.password.label }}<br>
+            {{ form.password.label }}
             {{ form.password(size=64) }}
         </div>
         <div>
